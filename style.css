@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.welcome-container{
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    background-color: #90ee90; /* #4c91e0 , etc. */
+    font-family: "Montserrat", Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+}
+
+a{
+    text-decoration: none;
+}
+.contact{
+    place-self: center;
+    padding: 20px;
+}
+
+#welcome-string{
+    place-self: center;
+    text-align: center;
+}
+
+
