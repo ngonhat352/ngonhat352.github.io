@@ -7,6 +7,7 @@
 </head> 
 
 <body>
+  <!-- -------------------------- -->
   <!-- Nav Bar -->
   <div class="nav">
     <input type="checkbox" id="nav-check">
@@ -31,6 +32,7 @@
     </div>
   </div>
 
+  <!-- -------------------------- -->
   <!-- welcome page -->
   <section class='welcome-container'>
     <div id='welcome-string'>
@@ -49,10 +51,10 @@
         <img id='linkedin' alt='Link to linkedin: https://www.linkedin.com/in/nhat-ngo-a9939716a/' 
         src='pictures/linkedin.png' width='150' height='150'>
       </a>
-    </div>
-    
+    </div>  
   </section>
-  
+
+  <!-- -------------------------- -->
   <!-- About Me -->
   <section class='about'> 
     <div class='title'>
@@ -60,27 +62,28 @@
       <hr color="#29B6F6">
     </div> 
 
-    <p id='intro'>I'm an undergrad at Macalester College (Saint Paul, MN), where I major in Computer Science and Psychology.
-       I'm particularly interested in software development, UX/UI design and mental health counselling. 
+    <p id='intro'>I'm an undergrad at Macalester College (Saint Paul, MN), where I major in Computer Science & Psychology.
+       I'm particularly interested in software development, UX/UI design & mental health counselling. 
        I love creating cool stuff whether it's for work or fun!</p>  
   </section>
 
+  <!-- -------------------------- -->
   <!-- My Projects -->
-  <section id
-  ="My-Projects">
-		<div class="section-content">
-			<h2><span class="underline--magical">My Projects</span></h2>
-			<br>
-
-			<div class="projects">
+  <section class = "projects">
+		<div class="title">
+			<h1>My Projects</h1>
+			<hr color="#29B6F6">
+    </div>
+		<div class="projects-display">
 				<a 
-					href="https://github.com/kietatr/RayTracer"
+					href="https://github.com/ngonhat352/PokemonBestCounter"
 					target="_blank" 
-					class="proj" id="proj-graphics"
-				>
+          class="proj" id="proj-pkm"
+        >
+        <!-- TODO: will fade back when scroll (javascript + a Kiet) -->
 					<div class="proj-text fade-scroll">
-						<h2>Ray Tracer</h2>
-						<p>A rendering technique that traces the path of light to simulate shadows and reflections. Built with OpenGL (C++).</p>
+						<h2>Pokemon Best Counter</h2>
+						<p>A program that finds the best counters <br> for an input Pokemon</p>
 					</div>
 					<div class="view-project">
 						<p><i class="far fa-eye"></i><br>View Project</p>
@@ -88,67 +91,22 @@
 				</a>
 
 				<a 
-					href="https://tune-do.herokuapp.com"
+          href="#" 
 					target="_blank"
-					class="proj" id="proj-tune-do"
+					class="proj" id="proj-personalWeb"
 				>
 					<div class="proj-text fade-scroll">
-						<h2>Tune Do</h2>
-						<p>A to-do list that plays musical notes. Built with React.</p>
+						<h2>Personal Website</h2>
+						<p>My personal portfolio website.</p>
 					</div>
 					<div class="view-project">
 						<p><i class="far fa-eye"></i><br>View Project</p>
 					</div>
 				</a>
-				
-				<a 
-					href="https://github.com/kietatr/floweree"
-					target="_blank" 
-					class="proj" id="proj-floweree"
-				>
-					<div class="proj-text fade-scroll">
-						<h2>floweree</h2>
-						<p>A mobile game that lets you grow a virtual flower. Built with React Native.</p>
-					</div>
-					<div class="view-project">
-						<p><i class="far fa-eye"></i><br>View Project</p>
-					</div>
-				</a>
-
-				<a 
-					href="https://www.instagram.com/kietatr/" 
-					target="_blank" 
-					class="proj" id="proj-flavors"
-				>
-					<div class="proj-text fade-scroll">
-						<h2>Flavors of Home</h2>
-						<p>Illustrations of the food from home. Made with Adobe Illustrator.</p>
-					</div>
-					<div class="view-project">
-						<p><i class="far fa-eye"></i><br>View Project</p>
-					</div>
-				</a>
-
-				<a 
-					href="https://www.behance.net/gallery/60278933/Le-Hong-Phong-High-School-for-the-Gifted-HCM-City" 
-					target="_blank" 
-					class="proj" id="proj-lhp"
-				>
-					<div class="proj-text fade-scroll">
-						<h2>LHP High School Branding</h2>
-						<p>A redesign of the brand identity for my high school. Made with Adobe Illustrator and Photoshop.</p>
-					</div>
-					<div class="view-project">
-						<p><i class="far fa-eye"></i><br>View Project</p>
-					</div>
-				</a>
-			</div>
-			
-
 		</div>
 	</section>
 
-
+  <!-- -------------------------- -->
   <!-- Tools learned -->
   <section class='skills'>
     <div class='title'>
@@ -177,6 +135,8 @@
     </div>
 
   </section>
+
+  <!-- -------------------------- -->
   <!-- Get in touch -->
   <section class='contact-form'>        
   </section>

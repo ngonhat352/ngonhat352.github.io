@@ -11,6 +11,7 @@ hr {
     width: 40%;
     margin-top: 5px;
     margin-bottom: 5px;
+    background-color: white;
 }
 
 .title > h1{
@@ -216,17 +217,20 @@ a{
 /* About Me */
 .about{
     background-color: #2e2e2e;
+    /* animation: colorchange 20s infinite; 
+    -webkit-animation: colorchange 20s infinite;  */
+
     /* justify-content: center; */
 }
 
 .about > p{
-    width: 60%;
+    width: 65%;
     align-self: center;  
     font-style: normal;
     font-weight: 520;
     font-size: 2rem;
     line-height: 1.4;
-    text-indent: 100px;
+    /* text-indent: 100px; */
     padding: 100px;
 }
 
@@ -240,23 +244,17 @@ a{
 
 /* ------------------------------------------- */
 /* Projects */
-/* .projects{
+.projects{
     background-color: #232323;
-} */
+    text-align: center;
+    /* animation: colorchange 20s infinite; 
+    -webkit-animation: colorchange 20s infinite;  */
 
-#My-Projects .section-content {
-	/*Because the planet from About section has z-index: 1*/
-	z-index: 2;
 }
 
-#My-Projects {
-	text-align: center;
-}
-
-
-#My-Projects .proj {
-	/* padding: 30vh 10vw; */
-	/* margin: 10vh 0; */
+.proj {
+	padding: 22vh 8vw;
+    margin: 15vh 0;
 
 	border-radius: 40px;
 
@@ -269,42 +267,41 @@ a{
 	text-decoration: none;
 	color: white;
 
-	position: relative;
-
 	/*Hide the View Project tag*/
 	overflow: hidden;
 
 	transition: all 0.5s;
 }
 
+.proj-text{
+    padding-bottom: 230px;
+    font-weight: 500;
+    font-size: 2rem;
+    /* text-shadow: rgb(0, 0, 0) 3px 0px 0px, rgb(0, 0, 0) 2.83487px 0.981584px 0px, rgb(0, 0, 0) 2.35766px 1.85511px 0px, rgb(0, 0, 0) 1.62091px 2.52441px 0px, rgb(0, 0, 0) 0.705713px 2.91581px 0px, rgb(0, 0, 0) -0.287171px 2.98622px 0px, rgb(0, 0, 0) -1.24844px 2.72789px 0px, rgb(0, 0, 0) -2.07227px 2.16926px 0px, rgb(0, 0, 0) -2.66798px 1.37182px 0px, rgb(0, 0, 0) -2.96998px 0.42336px 0px, rgb(0, 0, 0) -2.94502px -0.571704px 0px, rgb(0, 0, 0) -2.59586px -1.50383px 0px, rgb(0, 0, 0) -1.96093px -2.27041px 0px, rgb(0, 0, 0) -1.11013px -2.78704px 0px, rgb(0, 0, 0) -0.137119px -2.99686px 0px, rgb(0, 0, 0) 0.850987px -2.87677px 0px, rgb(0, 0, 0) 1.74541px -2.43999px 0px, rgb(0, 0, 0) 2.44769px -1.73459px 0px, rgb(0, 0, 0) 2.88051px -0.838247px 0px; */
+
+}
+
+.proj-text > h2{
+    font-size: 2.5rem;
+}
+
 .proj:hover, .proj:focus {
 	transform: scale(1.1);
-	z-index: 3;
 }
 
-/*My-Projects -- Project Images*/
+/* My-Projects -- Project Images*/
 
-/* #proj-graphics {
-	background-image: url("../img/gradient/gradient-overlay.svg"), url("../img/works/comp-graphics.jpg");
+#proj-pkm {
+	background-image: url("pictures/pkm.png");
 }
 
-#proj-floweree {
-	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/floweree.png");
+#proj-personalWeb {
+	background-image: url("pictures/pkm.png");
 }
 
-#proj-tune-do {
-	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/tune-do-darker.png");
-}
 
-#proj-flavors {
-	background-image: url("../img/gradient/gradient-overlay-r.svg"), url("../img/works/flavors-of-home.jpg");
-}
 
-#proj-lhp {
-	background-image: url("../img/gradient/gradient-overlay-l.svg"), url("../img/works/LHP-branding.jpg");
-} */
-
-/*My-Projects -- "View Project" tag*/
+/* My-Projects -- "View Project" tag */
 
 .view-project {
 	text-align: center;
@@ -318,7 +315,7 @@ a{
 	left: -50%;
 
 	color: white;
-	background: linear-gradient(to bottom right, red, orange);
+	background-color: #29B6F6;
 	padding: 10px 25px;
 	padding-bottom: 20px;
 
@@ -333,11 +330,17 @@ a{
 	opacity: 1;
 }
 
+.fa-eye:before {
+    content: "\f06e";
+}
+
 /* ------------------------------------------- */
 /* Skills */
-/* .skills {
+.skills {
     background-color: #2e2e2e;
-} */
+    /* animation: colorchange 20s infinite; 
+    -webkit-animation: colorchange 20s infinite; */
+}
 
 .logos{
     display: grid;
@@ -347,18 +350,18 @@ a{
     grid-template-columns: 200px 200px 200px;
     flex-basis: 30%;
     align-self: center;
-    padding: 70px;
+    padding: 30px;
 }
 
 .logos > img{
-    width: 150px;
-    height:150px;
+    width: 120px;
+    height:120px;
     transition: all .1s ease-in-out;
 }
 
 #css3{
-    width: 135px;
-    height: 135px;
+    width: 105px;
+    height: 105px;
 }
 .logos > img:hover{
     transform: scale(1.5);
