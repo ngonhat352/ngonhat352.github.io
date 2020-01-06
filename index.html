@@ -7,99 +7,178 @@
 </head> 
 
 <body>
-    <!-- Nav Bar -->
-    <div class="nav">
-        <input type="checkbox" id="nav-check">
-        <div class="nav-header">
-            <a class="nav-title" href="#">NathanNgo</a>
-        </div>
+  <!-- Nav Bar -->
+  <div class="nav">
+    <input type="checkbox" id="nav-check">
+    <div class="nav-header">
+      <a class="nav-title" href="#">NathanNgo</a>
+    </div>
         
-        <div class="nav-btn">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
         
-        <div class="nav-links">
-          <a href="#welcome-container">Home</a>
-          <a href="#about">About</a>
-          <a href="#projects">Projects</a>
-          <a href="#tools">Tools</a>
-          <a href="#contact-form">Contact</a>
-        </div>
+    <div class="nav-links">
+      <a href="#welcome-container">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact-form">Contact</a>
+    </div>
+  </div>
+
+  <!-- welcome page -->
+  <section class='welcome-container'>
+    <div id='welcome-string'>
+      <span>I'm Nathan, welcome to my page. <br>Let's build something together!</span>
+    </div>
+    <div class='contact'>
+      <a href="mailto: nngo@macalester.edu"target="_blank" >
+        <img id='mail' alt='nngo@macalester.edu' 
+        src='pictures/gmail.png' width='150' height='150'>
+      </a>
+      <a href="https://github.com/ngonhat352"target="_blank">
+        <img id='github' alt='Link to github: https://github.com/ngonhat352' 
+        src='pictures/github.png' width='150' height='150'>
+      </a>
+      <a href="https://www.linkedin.com/in/nhat-ngo-a9939716a/"target="_blank">
+        <img id='linkedin' alt='Link to linkedin: https://www.linkedin.com/in/nhat-ngo-a9939716a/' 
+        src='pictures/linkedin.png' width='150' height='150'>
+      </a>
+    </div>
+    
+  </section>
+  
+  <!-- About Me -->
+  <section class='about'> 
+    <div class='title'>
+      <h1>About Me</h1>
+      <hr color="#29B6F6">
+    </div> 
+
+    <p id='intro'>I'm an undergrad at Macalester College (Saint Paul, MN), where I major in Computer Science and Psychology.
+       I'm particularly interested in software development, UX/UI design and mental health counselling. 
+       I love creating cool stuff whether it's for work or fun!</p>  
+  </section>
+
+  <!-- My Projects -->
+  <section id
+  ="My-Projects">
+		<div class="section-content">
+			<h2><span class="underline--magical">My Projects</span></h2>
+			<br>
+
+			<div class="projects">
+				<a 
+					href="https://github.com/kietatr/RayTracer"
+					target="_blank" 
+					class="proj" id="proj-graphics"
+				>
+					<div class="proj-text fade-scroll">
+						<h2>Ray Tracer</h2>
+						<p>A rendering technique that traces the path of light to simulate shadows and reflections. Built with OpenGL (C++).</p>
+					</div>
+					<div class="view-project">
+						<p><i class="far fa-eye"></i><br>View Project</p>
+					</div>
+				</a>
+
+				<a 
+					href="https://tune-do.herokuapp.com"
+					target="_blank"
+					class="proj" id="proj-tune-do"
+				>
+					<div class="proj-text fade-scroll">
+						<h2>Tune Do</h2>
+						<p>A to-do list that plays musical notes. Built with React.</p>
+					</div>
+					<div class="view-project">
+						<p><i class="far fa-eye"></i><br>View Project</p>
+					</div>
+				</a>
+				
+				<a 
+					href="https://github.com/kietatr/floweree"
+					target="_blank" 
+					class="proj" id="proj-floweree"
+				>
+					<div class="proj-text fade-scroll">
+						<h2>floweree</h2>
+						<p>A mobile game that lets you grow a virtual flower. Built with React Native.</p>
+					</div>
+					<div class="view-project">
+						<p><i class="far fa-eye"></i><br>View Project</p>
+					</div>
+				</a>
+
+				<a 
+					href="https://www.instagram.com/kietatr/" 
+					target="_blank" 
+					class="proj" id="proj-flavors"
+				>
+					<div class="proj-text fade-scroll">
+						<h2>Flavors of Home</h2>
+						<p>Illustrations of the food from home. Made with Adobe Illustrator.</p>
+					</div>
+					<div class="view-project">
+						<p><i class="far fa-eye"></i><br>View Project</p>
+					</div>
+				</a>
+
+				<a 
+					href="https://www.behance.net/gallery/60278933/Le-Hong-Phong-High-School-for-the-Gifted-HCM-City" 
+					target="_blank" 
+					class="proj" id="proj-lhp"
+				>
+					<div class="proj-text fade-scroll">
+						<h2>LHP High School Branding</h2>
+						<p>A redesign of the brand identity for my high school. Made with Adobe Illustrator and Photoshop.</p>
+					</div>
+					<div class="view-project">
+						<p><i class="far fa-eye"></i><br>View Project</p>
+					</div>
+				</a>
+			</div>
+			
+
+		</div>
+	</section>
+
+
+  <!-- Tools learned -->
+  <section class='skills'>
+    <div class='title'>
+      <h1>Skills</h1>
+      <hr color="#29B6F6">
     </div>
 
-    <!-- welcome page -->
-    <section class='welcome-container'>
-        <div id='welcome-string'>
-            <span>Hi! I'm Nathan, a website developer &  <br>UX/UI designer based in Minnesota.</span>
-        </div>
-        <div class='contact'>
-            <a href="mailto: nngo@macalester.edu"target="_blank" >
-                <img id='mail' alt='nngo@macalester.edu' 
-                src='pictures/gmail.png' width='150' height='150'>
-            </a>
-            <a href="https://github.com/ngonhat352"target="_blank">
-                    <img id='github' alt='Link to github: https://github.com/ngonhat352' 
-                    src='pictures/github.png' width='150' height='150'>
-            </a>
-            <a href="https://www.linkedin.com/in/nhat-ngo-a9939716a/"target="_blank">
-                    <img id='linkedin' alt='Link to linkedin: https://www.linkedin.com/in/nhat-ngo-a9939716a/' 
-                    src='pictures/linkedin.png' width='150' height='150'>
-            </a>
-        </div>
-    </section>
-    <!-- About Me -->
-    <section class='about'>
+    <div class='logos' id='programmingLanguages'>
+      <img title='Python' id='python' src='pictures/python.png'></img>
+      <img title='Java' id='java' src='pictures/java.png'></img>
+      <img title='C++' id='cpp' src='pictures/c++.png'></img>
+    </div>
+    <hr>
 
-    </section>
-    <!-- My Projects -->
-    <section class='projects'>
+    <div class='logos' id='webLanguages'>      
+      <img title='HTML' id='html5' src='pictures/html.png'></img>        
+      <img title='CSS' id='css3' src='pictures/css.png'></img>
+      <img title='Javascript' id='javascript' src='pictures/javascript.png'></img> 
+    </div>
+    <hr> 
 
-    </section>
-    <!-- Tools learned -->
-    <section class='tools'>
+    <div class='logos' id='misc'>        
+      <img title='Git' id='git' src='pictures/git.png'></img>
+      <img title='Linux' id='linux' src='pictures/linux.png'></img>
+      <img title='Wordpress' id='wordpress' src='pictures/wordpress.png'></img>
+    </div>
 
-    </section>
-    <!-- Get in touch -->
-    <section class='contact'>
-        
-    </section>
-    
-<div class="snowflakes" aria-hidden="true">
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❄
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❄
-  </div>
-  <div class="snowflake">
-  ❅
-  </div>
-  <div class="snowflake">
-  ❆
-  </div>
-  <div class="snowflake">
-  ❄
-  </div>
-</div>
-
+  </section>
+  <!-- Get in touch -->
+  <section class='contact-form'>        
+  </section>
 </body>
 </html>
