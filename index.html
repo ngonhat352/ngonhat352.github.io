@@ -1,144 +1,145 @@
 <!DOCTYPE html>
-<html> 
+<html>
 <head>
-    <link href="style.css" type="text/css" rel="stylesheet">
-    <title>Nathan Ngo's wwebsite</title>
-
-</head> 
-
+   <link href="style.css" type="text/css" rel="stylesheet">
+   <title>Nathan Ngo's wwebsite</title>
+ 
+</head>
+ 
 <body>
-  <!-- -------------------------- -->
-  <!-- Nav Bar -->
-  <div class="nav">
-    <input type="checkbox" id="nav-check">
-    <div class="nav-header">
-      <a class="nav-title" href="#">NathanNgo</a>
-    </div>
-        
-    <div class="nav-btn">
-      <label for="nav-check">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-        
-    <div class="nav-links">
-      <a href="#welcome-container">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact-form">Contact</a>
-    </div>
+ <!-- Nav Bar -->
+ <div class="nav">
+   <input type="checkbox" id="nav-check">
+   <div class="nav-header">
+     <a class="nav-title" href="#">NathanNgo</a>
+   </div>
+      
+   <div class="nav-btn">
+     <label for="nav-check">
+       <span></span>
+       <span></span>
+       <span></span>
+     </label>
+   </div>
+      
+   <div class="nav-links">
+     <a href="#welcome-container">Home</a>
+     <a href="#about">About</a>
+     <a href="#projects">Projects</a>
+     <a href="#skills">Skills</a>
+     <a href="#contact-form">Contact</a>
+   </div>
+ </div>
+ 
+ <!-- welcome page -->
+ <section class='welcome-container'>
+   <div id='welcome-string'>
+    <span>Welcome, I'm Nathan. <br>Let's build something together!</span>
   </div>
-
-  <!-- -------------------------- -->
-  <!-- welcome page -->
-  <section class='welcome-container'>
-    <div id='welcome-string'>
-      <span>I'm Nathan, welcome to my page. <br>Let's build something together!</span>
-    </div>
-    <div class='contact'>
-      <a href="mailto: nngo@macalester.edu"target="_blank" >
-        <img id='mail' alt='nngo@macalester.edu' 
-        src='pictures/gmail.png' width='150' height='150'>
-      </a>
-      <a href="https://github.com/ngonhat352"target="_blank">
-        <img id='github' alt='Link to github: https://github.com/ngonhat352' 
-        src='pictures/github.png' width='150' height='150'>
-      </a>
-      <a href="https://www.linkedin.com/in/nhat-ngo-a9939716a/"target="_blank">
-        <img id='linkedin' alt='Link to linkedin: https://www.linkedin.com/in/nhat-ngo-a9939716a/' 
-        src='pictures/linkedin.png' width='150' height='150'>
-      </a>
-    </div>  
-  </section>
-
-  <!-- -------------------------- -->
+   <div class='contact'>
+     <a href="mailto: nngo@macalester.edu"target="_blank" >
+       <img id='mail' alt='nngo@macalester.edu'
+       src='pictures/gmail.png' width='150' height='150'>
+     </a>
+     <a href="https://github.com/ngonhat352"target="_blank">
+       <img id='github' alt='Link to github: https://github.com/ngonhat352'
+       src='pictures/github.png' width='150' height='150'>
+     </a>
+     <a href="https://www.linkedin.com/in/nhat-ngo-a9939716a/"target="_blank">
+       <img id='linkedin' alt='Link to linkedin: https://www.linkedin.com/in/nhat-ngo-a9939716a/'
+       src='pictures/linkedin.png' width='150' height='150'>
+     </a>
+   </div>
+  
+ </section>
   <!-- About Me -->
-  <section class='about'> 
-    <div class='title'>
-      <h1>About Me</h1>
-      <hr color="#29B6F6">
-    </div> 
+ <section class='about'>
+   <div class='title'>
+     <h1>About Me</h1>
+     <hr color="#29B6F6">
+   </div>
+ 
+   <p id='intro'>I'm an undergrad at Macalester College (Saint Paul, MN), where I major in Computer Science & Psychology.
+    I'm particularly interested in software development, UX/UI design & mental health counselling. 
+    I love creating cool stuff whether it's for work or fun!</p>  
+ <div class='hi-olaf'>
+   <!-- <img src="pictures/hello-bottom.gif" alt="hi there" id="before-hover" >
+   <img src="pictures/hello.gif" alt="hi there" id="after-hover" > -->
+ </div>   
 
-    <p id='intro'>I'm an undergrad at Macalester College (Saint Paul, MN), where I major in Computer Science & Psychology.
-       I'm particularly interested in software development, UX/UI design & mental health counselling. 
-       I love creating cool stuff whether it's for work or fun!</p>  
-  </section>
+ </section>
+ 
+ <!-- My Projects -->
+ <section class = "projects">
+  <div class="title">
+    <h1>My Projects</h1>
+    <hr color="#29B6F6"> 
+  </div>
+  <div class="projects-display">
+      <a 
+        href="https://github.com/ngonhat352/PokemonBestCounter"
+        target="_blank" 
+        class="proj" id="proj-pkm"
+      >
+      <!-- TODO: will fade back when scroll (javascript + a Kiet) -->
+        <div class="proj-text fade-scroll">
+          <h2>Pokemon Best Counter</h2>
+          <p>A program that finds the best counters <br> for an input Pokemon</p>
+        </div>
+        <div class="view-project">
+          <p><i class="far fa-eye"></i><br>View Project</p>
+        </div>
+      </a>
 
-  <!-- -------------------------- -->
-  <!-- My Projects -->
-  <section class = "projects">
-		<div class="title">
-			<h1>My Projects</h1>
-			<hr color="#29B6F6">
-    </div>
-		<div class="projects-display">
-				<a 
-					href="https://github.com/ngonhat352/PokemonBestCounter"
-					target="_blank" 
-          class="proj" id="proj-pkm"
-        >
-        <!-- TODO: will fade back when scroll (javascript + a Kiet) -->
-					<div class="proj-text fade-scroll">
-						<h2>Pokemon Best Counter</h2>
-						<p>A program that finds the best counters <br> for an input Pokemon</p>
-					</div>
-					<div class="view-project">
-						<p><i class="far fa-eye"></i><br>View Project</p>
-					</div>
-				</a>
+      <a 
+        href="#" 
+        target="_blank"
+        class="proj" id="proj-personalWeb"
+      >
+        <div class="proj-text fade-scroll">
+          <h2>Personal Website</h2>
+          <p>My personal portfolio website.</p>
+        </div>
+        <div class="view-project">
+          <p><i class="far fa-eye"></i><br>View Project</p>
+        </div>
+      </a>
+  </div>
+</section>
 
-				<a 
-          href="#" 
-					target="_blank"
-					class="proj" id="proj-personalWeb"
-				>
-					<div class="proj-text fade-scroll">
-						<h2>Personal Website</h2>
-						<p>My personal portfolio website.</p>
-					</div>
-					<div class="view-project">
-						<p><i class="far fa-eye"></i><br>View Project</p>
-					</div>
-				</a>
-		</div>
-	</section>
-
-  <!-- -------------------------- -->
-  <!-- Tools learned -->
-  <section class='skills'>
-    <div class='title'>
-      <h1>Skills</h1>
-      <hr color="#29B6F6">
-    </div>
-
-    <div class='logos' id='programmingLanguages'>
-      <img title='Python' id='python' src='pictures/python.png'></img>
-      <img title='Java' id='java' src='pictures/java.png'></img>
-      <img title='C++' id='cpp' src='pictures/c++.png'></img>
-    </div>
-    <hr>
-
-    <div class='logos' id='webLanguages'>      
-      <img title='HTML' id='html5' src='pictures/html.png'></img>        
-      <img title='CSS' id='css3' src='pictures/css.png'></img>
-      <img title='Javascript' id='javascript' src='pictures/javascript.png'></img> 
-    </div>
-    <hr> 
-
-    <div class='logos' id='misc'>        
-      <img title='Git' id='git' src='pictures/git.png'></img>
-      <img title='Linux' id='linux' src='pictures/linux.png'></img>
-      <img title='Wordpress' id='wordpress' src='pictures/wordpress.png'></img>
-    </div>
-
-  </section>
-
-  <!-- -------------------------- -->
-  <!-- Get in touch -->
-  <section class='contact-form'>        
-  </section>
+ 
+ 
+ <!-- Tools learned -->
+ <section class='skills'>
+   <div class='title'>
+     <h1>Skills</h1>
+     <hr color="#29B6F6">
+   </div>
+ 
+   <div class='logos' id='programmingLanguages'>
+     <img title='Python' id='python' src='pictures/python.png'></img>
+     <img title='Java' id='java' src='pictures/java.png'></img>
+     <img title='C++' id='cpp' src='pictures/c++.png'></img>
+   </div>
+   <hr>
+ 
+   <div class='logos' id='webLanguages'>     
+     <img title='HTML' id='html5' src='pictures/html.png'></img>       
+     <img title='CSS' id='css3' src='pictures/css.png'></img>
+     <img title='Javascript' id='javascript' src='pictures/javascript.png'></img>
+   </div>
+   <hr>
+ 
+   <div class='logos' id='misc'>       
+     <img title='Git' id='git' src='pictures/git.png'></img>
+     <img title='Linux' id='linux' src='pictures/linux.png'></img>
+     <img title='Wordpress' id='wordpress' src='pictures/wordpress.png'></img>
+   </div>
+ 
+ </section>
+ <!-- Get in touch -->
+ <section class='contact-form'>       
+ </section>
 </body>
 </html>
+
