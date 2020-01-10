@@ -127,14 +127,17 @@ a{
  
 /* ------------------------------------------- */
 /* Navigation Bar - @TODO: show up 5s after the user scroll only*/  
-.nav {
+
+
+nav {
     height: 48px;
     width: 100%;
     background-color: rgb(66, 65, 65);
     box-sizing: border-box;
     font-weight: 550;
-    position: fixed;
     z-index: 999; /* will change in JS */
+    position: fixed;
+    transition: all .3s;
 }
   
 .nav-header {
@@ -210,8 +213,9 @@ a{
     }
  
     #nav-check:checked ~ .nav-links {
-        height: calc(100vh - 595px);
+        height: 40vh;
         overflow-y: auto;
+        overflow-x: hidden;
     }
 }
 /* ------------------------------------------- */
