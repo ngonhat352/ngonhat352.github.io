@@ -1,4 +1,4 @@
-# Personal Website (80% complete)
+# Personal Website (WIP)
 
 Access at https://ngonhat352.github.io/
 
